@@ -52,7 +52,7 @@ function ProductDestacados(ListaDestacados) {
         //button
         //Creando btn
         const btnAgregar = document.createElement('button');
-        btnAgregar.classList.add('btn','btn-primary');
+        btnAgregar.classList.add('btn','btn-primary','inactive');
         btnAgregar.innerText ='Agregar Destacado';
 
        
@@ -231,6 +231,7 @@ otrosList.push ({
 //menu canvas
 const trigger =document.querySelector('#menu');
 const offcanvas = document.querySelector('#menu-canvas');
+const menuProductDetail = document.querySelector('.product-detail-close');
 
 trigger.addEventListener('click', toggleMenu);
 
@@ -238,7 +239,15 @@ function toggleMenu() {
     offcanvas.classList.toggle('menu-activo');
     console.log('click en menu agregar');
 }
+// menu canvas para btn closed
+menuProductDetail.addEventListener('click',toggleMenuProductDetail)
+trigger.addEventListener('click', toggleMenu);
 
+
+function toggleMenuProductDetail() {
+    offcanvas.classList.toggle('menu-activo');
+    console.log('click en menu agregar');
+}
 
 //Aumentar y disminuir cantidad
 
