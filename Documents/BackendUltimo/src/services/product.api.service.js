@@ -1,6 +1,6 @@
 const productsModel = require('../models/mongoose/products.model.js');
 
-
+//Por persistencia
 //class ProductService {
 class FactoryMongo {
     constructor(){
