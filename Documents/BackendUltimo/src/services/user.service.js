@@ -22,32 +22,6 @@ class UserService {
     }
 
 
-   /* async AllUser () {
-
-    const {email} = usersModel;
-
-
-        try {
-            const dataUser =  usersModel.findOne({email})
-            console.log(dataUser)
-            return dataUser
-        }catch (error) {
-            throw ("ERROR",error)
-        }
-    } */
-       /*  const {email} = usersModel;
-        try {
-            
-
-            const dataUser =  usersModel.findOne({email})
-            return dataUser
-
-        } catch (error) {
-            throw ("ERROR",error)
-        } */
- 
-
-
 async AllPassword (){
 
     const {password} = usersModel;
@@ -64,15 +38,6 @@ async AllPassword (){
  
 }
 
- /*    async addUser (userData){
-        try {
-            const user = await usersModel.create(userData);
-            return user;
-
-        } catch (error) {
-            throw error;
-        }
-    } */
 
     async addUser (email,firstName,lastName,password,usuario){
        
